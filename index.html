@@ -3,44 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Мой сайт</title>
+  <title>Компания "Услуги Плюс"</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f2f2f2;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-top: 0;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+    header { background: #007BFF; color: white; padding: 20px; text-align: center; }
+    nav { background: #0056b3; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: 20px auto; padding: 20px; background: white; border-radius: 10px; }
+    h1, h2 { color: #333; }
+    .services { display: flex; flex-wrap: wrap; gap: 20px; }
+    .service { flex: 1 1 300px; background: #e9ecef; padding: 20px; border-radius: 10px; }
+    footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+    form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid #ccc; }
+    form button { background: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    form button:hover { background: #0056b3; }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Добро пожаловать на мой сайт!</h1>
+    <h1>Компания "Услуги Плюс"</h1>
+    <p>Сантехника, IT-поддержка, клининг, ремонт техники</p>
   </header>
 
-  <div class="container">
-    <h2>Обо мне</h2>
-    <p>Здесь будет информация о вас. Можете описать, чем занимаетесь, чем интересуетесь, и что хотите показать на сайте.</p>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="services.html">Услуги</a>
+    <a href="about.html">О нас</a>
+    <a href="contact.html">Контакты</a>
+  </nav>
 
-    <h2>Контакты</h2>
-    <p>Email: example@mail.com</p>
+  <div class="container">
+    <h2>Наши услуги</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Сантехника</h3>
+        <p>Установка и ремонт труб, кранов, сантехнических приборов и отопления.</p>
+      </div>
+      <div class="service">
+        <h3>Системный администратор</h3>
+        <p>Настройка сетей, серверов, удалённая поддержка и сопровождение IT-систем.</p>
+      </div>
+      <div class="service">
+        <h3>Клининг</h3>
+        <p>Уборка квартир, домов и офисных помещений любой сложности.</p>
+      </div>
+      <div class="service">
+        <h3>Ремонт ПК и телефонов</h3>
+        <p>Диагностика, восстановление данных, ремонт и замена деталей.</p>
+      </div>
+    </div>
   </div>
+
+  <footer>
+    <p>Телефон: +7 123 456-78-90 | Email: info@uslugiplus.ru</p>
+    <p>© 2025 Компания "Услуги Плюс". Все права защищены.</p>
+  </footer>
+
 </body>
 </html>
